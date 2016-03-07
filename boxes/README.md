@@ -1,1 +1,2 @@
 
+The **boxes** directory will be used to hold the vagrant box files including the Fedora Cloud image downloaded from Fedora and the CockroachDB machine image that will be built as part of this guide. Vagrant Boxes are just machine images with some configuration files that vagrant uses. See the [Boxes](https://www.vagrantup.com/docs/getting-started/boxes.html) page in the Vagrant documentation for more information.
