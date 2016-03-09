@@ -7,11 +7,13 @@ The approach is to get a working CockroachDB cluster consisting of multiple mach
 ## Overview
 
 The logical architecture of the cluster looks like:
+
 ![logical architecture image](images/virtualbox_architecture.png)
 
 If you haven’t used VirtualBox or Vagrant before, I would recommend you read [Chapter 1. First Steps](https://www.virtualbox.org/manual/ch01.html) in the VirtualBox manual and the [Why Vagrant](https://www.vagrantup.com/docs/why-vagrant/index.html) section of the Vagrant documentation. This guide involves creating a new Vagrant base box which I consider to be an intermediate level task.
 
 The basic approach is to start with a minimal base image then add the software and configuration to run an instance of CockroachDB. This machine is then packaged into a new Vagrant Box image that can be used to start multiple nodes. The guide uses the Fedora Cloud Vagrant image as it’s small and contains most of the pre-requisite software at the required versions.
+
 ![guide workflow image](images/cockroach_vb_overview.png)
 
 ### Intended Use
