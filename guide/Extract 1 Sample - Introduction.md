@@ -6,9 +6,11 @@ The approach is to get a working CockroachDB cluster consisting of multiple mach
 
 ## Overview
 
-The logical architecture of the cluster looks like:
+The logical architecture of the cluster looks like this. The diagram shows 3 of the possible 26 cluster nodes and a client machine that doesn’t run a CockroachDB instance but is used to connect to the cluster.
 
 ![logical architecture image](images/virtualbox_architecture.png)
+
+> The client machine is currently just another copy of a cluster node but it really should have a GUI interface so it can run the CockroachDB UI and not just the cockroach sql command line. It should have a Gnome desktop with a Chrome or Firefox browser.
 
 If you haven’t used VirtualBox or Vagrant before, I would recommend you read [Chapter 1. First Steps](https://www.virtualbox.org/manual/ch01.html) in the VirtualBox manual and the [Why Vagrant](https://www.vagrantup.com/docs/why-vagrant/index.html) section of the Vagrant documentation. This guide involves creating a new Vagrant base box which I consider to be an intermediate level task.
 
