@@ -1,0 +1,23 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+
+  #  This is the name of the vagrant box created with the vagrant add command in the guide.
+  #
+  config.vm.box      = "fedora23"
+  
+  config.vm.define "base" do |base|
+  end
+  
+  config.vm.hostname = "base"
+  config.ssh.insert_key = false
+  
+  config.vm.provider "virtualbox" do |vb|
+     vb.name = "base"
+     vb.memory = 1024
+  end
+
+  config.vm.provision :shell, :path => "base_provision.bash"
+  
+end
