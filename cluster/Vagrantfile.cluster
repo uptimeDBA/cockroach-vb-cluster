@@ -86,6 +86,14 @@ Vagrant.configure(2) do |config|
             #  and the number of cluster nodes.  
             #
             vb.cpus = 2
+            
+            #  Adjust the VirtualBox timesync parameters to keep better time synchronization 
+            #  between the host and cluster nodes.
+            #
+            vb.customize [ "guestproperty", "set", :id, "/VirtualBox/GuestAdd/VBoxService/--timesync-min-adjust", 50 ]
+            vb.customize [ "guestproperty", "set", :id, "/VirtualBox/GuestAdd/VBoxService/--timesync-set-threshold", 1000 ]
+            vb.customize [ "guestproperty", "set", :id, "/VirtualBox/GuestAdd/VBoxService/--timesync-set-start" ]
+            vb.customize [ "guestproperty", "set", :id, "/VirtualBox/GuestAdd/VBoxService/--timesync-set-on-restore", 1 ]
          end
       end
    end 
