@@ -15,6 +15,11 @@ echo  "Updating installed packages to latest versions"
 dnf --quiet --assumeyes upgrade
 
 #  Install additional software required for cockroachDB
+
+#  wget is used by the install_cockroachDB.bash script to download the pre-built binary.
+#
+dnf --quiet --assumeyes wget
+
 #  git is required if you are building the cockroachDB software from source.
 #
 #echo "Installing gcc-c++"
