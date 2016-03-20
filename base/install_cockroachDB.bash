@@ -16,6 +16,10 @@ wget --quiet https://binaries.cockroachdb.com/cockroach.linux-amd64.tgz
 
 tar -xzf cockroach.linux-amd64.tgz
 
+if [ ! -d ${HOME}/bin ]; then
+   mkdir -m 750 ${HOME}/bin
+fi
+
 cp cockroach.linux-amd64/cockroach ${HOME}/bin/
 chmod 750 ${HOME}/bin/cockroach
 
