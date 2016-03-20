@@ -70,8 +70,8 @@ fi
 #  instead of the default user "vagrant" in the CockroachDB node.
 #  Install the Vagrant public key into the .ssh directory.
 #
+echo "Setting up roachdb user for SSH."
 if [ ! -d ~roachdb/.ssh ]; then 
-   echo "Setting up roachdb user for SSH."
    mkdir -p 700 ~roachdb/.ssh
 fi
 
