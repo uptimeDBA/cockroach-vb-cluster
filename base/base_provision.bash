@@ -9,18 +9,6 @@
 #  For example, if Go has already been installed and you want to re-install it, you will have to manually "rm -rf /usr/local/go"
 #  before running "vagrant provision" (which will run this script).
 
-#  Output a banner to identify the end out previous output and the start of this script's output.
-#
-echo << EOF
-
-###
-#
-#  Executing provisioning script...
-#
-###
-EOF
-
-
 #  Update all installed packages from the base image to their latest versions.
 #
 echo  "Updating installed packages to latest versions"
@@ -29,22 +17,22 @@ dnf --quiet --assumeyes upgrade
 #  Install additional software required for cockroachDB
 #  git is required if you are building the cockroachDB software from source.
 #
-echo "Installing gcc-c++"
-dnf --quiet --assumeyes install gcc-c++
-
-echo "Installing git"
-dnf --quiet --assumeyes install git 
+#echo "Installing gcc-c++"
+#dnf --quiet --assumeyes install gcc-c++
+#
+#echo "Installing git"
+#dnf --quiet --assumeyes install git 
 
 
 #  Install Go from a local copy of the tarball that has been placed in the vagrant rsync directory (/vagrant).
 #  Ensure the version of Go meets the requirements for cockroachDB.
 #
-if [ ! -d /usr/local/go ]; then
-   echo "Installing Go"
-   [ -r /vagrant/go1.6.linux-amd64.tar.gz ] && tar -C /usr/local -xzf /vagrant/go1.6.linux-amd64.tar.gz || echo "Go install file not found."
-else
-   echo "Go directory exists, not installing."
-fi
+#if [ ! -d /usr/local/go ]; then
+#   echo "Installing Go"
+#   [ -r /vagrant/go1.6.linux-amd64.tar.gz ] && tar -C /usr/local -xzf /vagrant/go1.6.linux-amd64.tar.gz || echo "Go install file not found."
+#else
+#   echo "Go directory exists, not installing."
+#fi
 
 
 #  Append the entries for the cluster nodes to the hosts file.
@@ -91,22 +79,22 @@ fi
 
 #  Put the Go binaries in the user's PATH
 #
-if ! grep -q "/usr/local/go/bin" /home/roachdb/.bash_profile ; then
-   echo "Adding /usr/local/go/bin to roachdb's PATH environment variable."
-   echo "export PATH=\$PATH:/usr/local/go/bin" >> /home/roachdb/.bash_profile
-else
-   echo "/usr/local/go/bin exists in roachdb's PATH environment variable, not adding."
-fi
+#if ! grep -q "/usr/local/go/bin" /home/roachdb/.bash_profile ; then
+#   echo "Adding /usr/local/go/bin to roachdb's PATH environment variable."
+#   echo "export PATH=\$PATH:/usr/local/go/bin" >> /home/roachdb/.bash_profile
+#else
+#   echo "/usr/local/go/bin exists in roachdb's PATH environment variable, not adding."
+#fi
 
 
 #  Add the GOPATH variable to the user's environment.
 #
-if ! grep -q "^export GOPATH" /home/roachdb/.bash_profile ; then
-   echo "Adding GOPATH to roachdb's .bash_profile"
-   echo "export GOPATH=/home/roachdb" >> /home/roachdb/.bash_profile
-else
-   echo "GOPATH exists in roachdb's .bash_profile, not adding."
-fi
+#if ! grep -q "^export GOPATH" /home/roachdb/.bash_profile ; then
+#   echo "Adding GOPATH to roachdb's .bash_profile"
+#   echo "export GOPATH=/home/roachdb" >> /home/roachdb/.bash_profile
+#else
+#   echo "GOPATH exists in roachdb's .bash_profile, not adding."
+#fi
 
 
 #  Copy the install_cockroachDB.bash script to roachdb's home directory.
