@@ -18,7 +18,7 @@ dnf --quiet --assumeyes upgrade
 
 #  wget is used by the install_cockroachDB.bash script to download the pre-built binary.
 #
-dnf --quiet --assumeyes wget
+dnf --quiet --assumeyes install wget
 
 #  git is required if you are building the cockroachDB software from source.
 #
