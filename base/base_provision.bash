@@ -66,7 +66,6 @@ else
    echo "roachdb user exists, not adding."
 fi
 
-
 #  The roachdb user will be the one that gets used for the vagrant ssh command 
 #  instead of the default user "vagrant" in the CockroachDB node.
 #  Install the Vagrant public key into the .ssh directory.
@@ -74,6 +73,9 @@ fi
 if [ ! -d ~roachdb/.ssh ]; then 
    echo "Setting up roachdb user for SSH."
    mkdir -p 700 ~roachdb/.ssh
+fi
+
+if [ ! -e ~roachdb/.ssh/authorized_keys ]; then
    cp /vagrant/vagrant_insecure_public_key ~roachdb/.ssh/authorized_keys
    chmod 600 ~roachdb/.ssh/authorized_keys
    chown -R roachdb:roachdb ~roachdb/.ssh
