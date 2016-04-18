@@ -1,0 +1,48 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  subcategories:
+#    - title: Sample
+#      url: /cockroach-vb-cluster/sample.html
+#      audience: student, instructor
+#      platform: all
+#      product: CockroachDB
+#      version: all
+#      output: web
+
+#    - title: uptimeDBA Blog
+#      external_url: http://uptimedba.github.io/
+#      audience: student, instructor
+#      platform: all
+#      product: CockroachDB
+#      version: all
+#      output: web
+
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav dropdowns
+  subcategories:
+    - title: Resources
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web
+      items:
+        - title: Cockroach Labs
+          external_url: https://www.cockroachlabs.com/
+          audience: student, instructor
+          platform: all
+          product: CockroachDB
+          version: all
+          output: web
+
+        - title: CockroachDB documentation
+          external_url: http://www.cockroachlabs.com/docs/
+          audience: student, instructor
+          platform: all
+          product: CockroachDB
+          version: all
+          output: web
+

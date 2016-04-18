@@ -1,0 +1,494 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+home:
+  title: "Introduction"
+  url: "../cockroach-vb-cluster/home.html"
+  link: "<a href='../cockroach-vb-cluster/home.html'>Introduction</a>"
+
+
+
+cockroach-vb-cluster_supported_features:
+  title: "Supported features"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_supported_features.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_supported_features.html'>Supported features</a>"
+
+
+
+cockroach-vb-cluster_about:
+  title: "About the theme author"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_about.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_about.html'>About the theme author</a>"
+
+
+
+cockroach-vb-cluster_support:
+  title: "Support"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_support.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_support.html'>Support</a>"
+
+
+
+
+
+cockroach-vb-cluster_getting_started:
+  title: "1. Build the default project"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_getting_started.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_getting_started.html'>1. Build the default project</a>"
+
+
+
+cockroach-vb-cluster_adding_new_projects:
+  title: "2. Add a new project"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_adding_new_projects.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_adding_new_projects.html'>2. Add a new project</a>"
+
+
+
+cockroach-vb-cluster_decide_on_attributes:
+  title: "3. Decide on your project's attributes"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_decide_on_attributes.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_decide_on_attributes.html'>3. Decide on your project's attributes</a>"
+
+
+
+cockroach-vb-cluster_configuration_settings:
+  title: "4. Set the configuration options"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_configuration_settings.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_configuration_settings.html'>4. Set the configuration options</a>"
+
+
+
+cockroach-vb-cluster_conditions_file_customization:
+  title: "5. Customize the conditions file"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_conditions_file_customization.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_conditions_file_customization.html'>5. Customize the conditions file</a>"
+
+
+
+cockroach-vb-cluster_configure_sidebar:
+  title: "6. Configure the sidebar"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_configure_sidebar.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_configure_sidebar.html'>6. Configure the sidebar</a>"
+
+
+
+cockroach-vb-cluster_top_navigation:
+  title: "7. Configure the top navigation"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_top_navigation.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_top_navigation.html'>7. Configure the top navigation</a>"
+
+
+
+cockroach-vb-cluster_url_generator_customization:
+  title: "8. Customize the URL generator"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_url_generator_customization.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_url_generator_customization.html'>8. Customize the URL generator</a>"
+
+
+
+cockroach-vb-cluster_princexml_setup:
+  title: "9. Set up Prince XML"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_princexml_setup.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_princexml_setup.html'>9. Set up Prince XML</a>"
+
+
+
+cockroach-vb-cluster_build_scripts:
+  title: "10. Configure the build scripts"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_build_scripts.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_build_scripts.html'>10. Configure the build scripts</a>"
+
+
+
+
+
+cockroach-vb-cluster_pages:
+  title: "Pages"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_pages.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_pages.html'>Pages</a>"
+
+
+
+cockroach-vb-cluster_webstorm_text_editor:
+  title: "WebStorm Text Editor"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_webstorm_text_editor.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_webstorm_text_editor.html'>WebStorm Text Editor</a>"
+
+
+
+cockroach-vb-cluster_conditional_logic:
+  title: "Conditional logic"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_conditional_logic.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_conditional_logic.html'>Conditional logic</a>"
+
+
+
+cockroach-vb-cluster_content_reuse:
+  title: "Content reuse"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_content_reuse.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_content_reuse.html'>Content reuse</a>"
+
+
+
+cockroach-vb-cluster_collections:
+  title: "Collections"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_collections.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_collections.html'>Collections</a>"
+
+
+
+
+
+cockroach-vb-cluster_sidebar_navigation:
+  title: "Sidebar navigation"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_sidebar_navigation.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_sidebar_navigation.html'>Sidebar navigation</a>"
+
+
+
+cockroach-vb-cluster_yaml_tutorial:
+  title: "YAML tutorial in the context of Jekyll"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_yaml_tutorial.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_yaml_tutorial.html'>YAML tutorial in the context of Jekyll</a>"
+
+
+
+cockroach-vb-cluster_tags:
+  title: "Tags"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_tags.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_tags.html'>Tags</a>"
+
+
+
+cockroach-vb-cluster_series:
+  title: "Series"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_series.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_series.html'>Series</a>"
+
+
+
+
+
+cockroach-vb-cluster_adding_tooltips:
+  title: "Tooltips"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_adding_tooltips.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_adding_tooltips.html'>Tooltips</a>"
+
+
+
+cockroach-vb-cluster_alerts:
+  title: "Alerts"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_alerts.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_alerts.html'>Alerts</a>"
+
+
+
+cockroach-vb-cluster_icons:
+  title: "Icons"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_icons.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_icons.html'>Icons</a>"
+
+
+
+cockroach-vb-cluster_images:
+  title: "Images"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_images.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_images.html'>Images</a>"
+
+
+
+cockroach-vb-cluster_labels:
+  title: "Labels"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_labels.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_labels.html'>Labels</a>"
+
+
+
+cockroach-vb-cluster_hyperlinks:
+  title: "Links"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_hyperlinks.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_hyperlinks.html'>Links</a>"
+
+
+
+cockroach-vb-cluster_navtabs:
+  title: "Navtabs"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_navtabs.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_navtabs.html'>Navtabs</a>"
+
+
+
+cockroach-vb-cluster_video_embeds:
+  title: "Video embeds"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_video_embeds.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_video_embeds.html'>Video embeds</a>"
+
+
+
+cockroach-vb-cluster_tables:
+  title: "Tables"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_tables.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_tables.html'>Tables</a>"
+
+
+
+cockroach-vb-cluster_syntax_highlighting:
+  title: "Syntax highlighting"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_syntax_highlighting.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_syntax_highlighting.html'>Syntax highlighting</a>"
+
+
+
+
+
+cockroach-vb-cluster_commenting_on_files:
+  title: "Commenting on files"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_commenting_on_files.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_commenting_on_files.html'>Commenting on files</a>"
+
+
+
+
+
+cockroach-vb-cluster_build_arguments:
+  title: "Build arguments"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_build_arguments.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_build_arguments.html'>Build arguments</a>"
+
+
+
+cockroach-vb-cluster_themes:
+  title: "Themes"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_themes.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_themes.html'>Themes</a>"
+
+
+
+cockroach-vb-cluster_link_validation:
+  title: "Link validation"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_link_validation.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_link_validation.html'>Link validation</a>"
+
+
+
+cockroach-vb-cluster_title_checker:
+  title: "Check page title consistency"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_title_checker.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_title_checker.html'>Check page title consistency</a>"
+
+
+
+cockroach-vb-cluster_generating_pdfs:
+  title: "Generating PDFs"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_generating_pdfs.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_generating_pdfs.html'>Generating PDFs</a>"
+
+
+
+cockroach-vb-cluster_excluding_files:
+  title: "Excluding files"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_excluding_files.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_excluding_files.html'>Excluding files</a>"
+
+
+
+cockroach-vb-cluster_help_api:
+  title: "Help APIs and UI tooltips"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_help_api.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_help_api.html'>Help APIs and UI tooltips</a>"
+
+
+
+cockroach-vb-cluster_search_configuration:
+  title: "Search configuration"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_search_configuration.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_search_configuration.html'>Search configuration</a>"
+
+
+
+cockroach-vb-cluster_iterm_profiles:
+  title: "iTerm profiles"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_iterm_profiles.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_iterm_profiles.html'>iTerm profiles</a>"
+
+
+
+cockroach-vb-cluster_push_build_to_server:
+  title: "Pushing builds to server"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_push_build_to_server.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_push_build_to_server.html'>Pushing builds to server</a>"
+
+
+
+cockroach-vb-cluster_no_password_prompts_scp:
+  title: "Getting around the password prompts in SCP"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_no_password_prompts_scp.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_no_password_prompts_scp.html'>Getting around the password prompts in SCP</a>"
+
+
+
+
+
+cockroach-vb-cluster_kb_layout:
+  title: "Knowledge-base layout"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_kb_layout.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_kb_layout.html'>Knowledge-base layout</a>"
+
+
+
+cockroach-vb-cluster_scroll:
+  title: "Scroll layout"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_scroll.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_scroll.html'>Scroll layout</a>"
+
+
+
+cockroach-vb-cluster_shuffle:
+  title: "Shuffle layout"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_shuffle.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_shuffle.html'>Shuffle layout</a>"
+
+
+
+cockroach-vb-cluster_faq:
+  title: "FAQ layout"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_faq.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_faq.html'>FAQ layout</a>"
+
+
+
+cockroach-vb-cluster_glossary:
+  title: "Glossary layout"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_glossary.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_glossary.html'>Glossary layout</a>"
+
+
+
+
+
+cockroach-vb-cluster_algoliasearch:
+  title: "Configuring Algolia search"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_algoliasearch.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_algoliasearch.html'>Configuring Algolia search</a>"
+
+
+
+
+
+cockroach-vb-cluster_mercurial_collaboration:
+  title: "Mercurial notes and tips"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_mercurial_collaboration.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_mercurial_collaboration.html'>Mercurial notes and tips</a>"
+
+
+
+
+
+cockroach-vb-cluster_troubleshooting:
+  title: "Troubleshooting"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_troubleshooting.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_troubleshooting.html'>Troubleshooting</a>"
+
+
+
+cockroach-vb-cluster_install_dependencies:
+  title: "Adding all project dependencies"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_install_dependencies.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_install_dependencies.html'>Adding all project dependencies</a>"
+
+
+
+
+
+cockroach-vb-cluster_tag_archives_overview:
+  title: "Tag archives overview"
+  url: "../cockroach-vb-cluster/cockroach-vb-cluster_tag_archives_overview.html"
+  link: "<a href='../cockroach-vb-cluster/cockroach-vb-cluster_tag_archives_overview.html'>Tag archives overview</a>"
+
+
+
+tag_getting_started:
+  title: "Getting started pages"
+  url: "../cockroach-vb-cluster/tag_getting_started.html"
+  link: "<a href='../cockroach-vb-cluster/tag_getting_started.html'>Getting started pages</a>"
+
+
+tag_formatting:
+  title: "Formatting pages"
+  url: "../cockroach-vb-cluster/tag_formatting.html"
+  link: "<a href='../cockroach-vb-cluster/tag_formatting.html'>Formatting pages</a>"
+
+
+tag_navigation:
+  title: "Navigation pages"
+  url: "../cockroach-vb-cluster/tag_navigation.html"
+  link: "<a href='../cockroach-vb-cluster/tag_navigation.html'>Navigation pages</a>"
+
+
+tag_content_types:
+  title: "Content types pages"
+  url: "../cockroach-vb-cluster/tag_content_types.html"
+  link: "<a href='../cockroach-vb-cluster/tag_content_types.html'>Content types pages</a>"
+
+
+tag_publishing:
+  title: "Publishing pages"
+  url: "../cockroach-vb-cluster/tag_publishing.html"
+  link: "<a href='../cockroach-vb-cluster/tag_publishing.html'>Publishing pages</a>"
+
+
+tag_special_layouts:
+  title: "Special layout pages"
+  url: "../cockroach-vb-cluster/tag_special_layouts.html"
+  link: "<a href='../cockroach-vb-cluster/tag_special_layouts.html'>Special layout pages</a>"
+
+
+tag_collaboration:
+  title: "Collaboration pages"
+  url: "../cockroach-vb-cluster/tag_collaboration.html"
+  link: "<a href='../cockroach-vb-cluster/tag_collaboration.html'>Collaboration pages</a>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

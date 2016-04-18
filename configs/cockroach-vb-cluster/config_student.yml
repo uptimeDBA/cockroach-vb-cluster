@@ -1,0 +1,77 @@
+# project definitions
+project: cockroach-vb-cluster_student
+audience: student
+product: CockroachDB
+platform: all
+version: all
+output: web
+# Comment out destination as a test
+# Shoud build in _site?
+#destination: ../doc_outputs/cockroach-vb-cluster/student
+topnav_title: CockroachDB Cluster using VirtualBox and Vagrant
+homepage_title: CockroachDB Cluster using VirtualBox and Vagrant
+site_title: uptimeDBA
+project_folder: cockroach-vb-cluster_student
+company_name: Paul Steffensen (@uptimeDBA)
+footer_image_location: 
+github_editme_path:
+disqus_shortname: cockroach-vb-cluster
+# variables
+
+
+sidebar_tagline: Guide
+sidebar_version: pre-release (Alpha)
+theme_file: theme-blue.css
+pdf_file_name: cockroach-vb-cluster_student_pdf.pdf
+
+# the algolia entries here are experimental only.
+
+#gems:
+#  - algoliasearch-jekyll
+#algolia:
+#  application_id: 'HXUBJERYYB'
+#  index_name:     'documentation_theme_jekyll_writers'
+port: 4009
+
+exclude:
+  - _site
+  - _drafts
+  - configs/
+  - doc/mydoc_writers*
+  - mydoc/
+
+#host: 127.0.0.1
+host: 192.168.0.31
+feedback_email: blog@uptime.co.nz
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+collections:
+  tooltips:
+    output: false
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+  -
+    scope:
+      path: ""
+      type: "tooltips"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      tooltip: true
+

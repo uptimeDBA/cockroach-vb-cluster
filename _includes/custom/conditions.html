@@ -1,0 +1,33 @@
+
+{% comment %}
+	Student Guide
+{% endcomment %}
+
+{% if site.project == "cockroach-vb-cluster_student" %}
+{% assign audience = "student" %}
+{% assign sidebar = site.data.cockroach-vb-cluster.cockroach-vb-cluster_sidebar.entries %}
+{% assign topnav = site.data.cockroach-vb-cluster.cockroach-vb-cluster_topnav.topnav %}
+{% assign topnav_dropdowns = site.data.cockroach-vb-cluster.cockroach-vb-cluster_topnav.topnav_dropdowns %}
+{% assign version = "all" %}
+{% assign product = "CockroachDB" %}
+{% assign platform = "all" %}
+{% assign projectTags = site.data.cockroach-vb-cluster.cockroach-vb-cluster_tags.allowed-tags %}
+{% assign projectFolder = "cockroach-vb-cluster" %}
+{% endif %}
+
+
+{% comment %}
+	Instructor Guide
+{% endcomment %}
+
+{% if site.project == "cockroach-vb-cluster_instructor" %}
+{% assign audience = "instructor" %}
+{% assign sidebar = site.data.cockroach-vb-cluster.cockroach-vb-cluster_sidebar.entries %}
+{% assign topnav = site.data.cockroach-vb-cluster.cockroach-vb-cluster_topnav.topnav %}
+{% assign topnav_dropdowns = site.data.cockroach-vb-cluster.cockroach-vb-cluster_topnav.topnav_dropdowns %}
+{% assign version = "all" %}
+{% assign product = "CockroachDB" %}
+{% assign platform = "all" %}
+{% assign projectTags = site.data.cockroach-vb-cluster.cockroach-vb-cluster_tags.allowed-tags %}
+{% assign projectFolder = "cockroach-vb-cluster_instructor" %}
+{% endif %}

@@ -1,0 +1,209 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+# Sidebar
+entries:
+- title: Sidebar
+  subcategories:
+  - title:
+    audience: student, instructor
+    platform: all
+    product: CockroachDB
+    version: all
+    output: pdf
+    type: frontmatter
+    items:
+    - title:
+      url: /titlepage.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: pdf
+      type: frontmatter
+
+
+  - title: Get Started
+    audience: student, instructor
+    platform: all
+    product: CockroachDB
+    version: all
+    output: web, pdf
+    items:
+    - title: Introduction
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_introduction.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+
+    - title: Overview
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_overview.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+
+  - title: Host Machine
+    audience: student, instructor
+    platform: all
+    product: CockroachDB
+    version: all
+    output: web, pdf
+    items:
+
+    - title: Cygwin
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_cygwin.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+
+    - title: VirtualBox
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_virtualbox.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+
+    - title: Vagrant
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_vagrant.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+
+  - title: CockroachDB Vagrant Box
+    audience: student, instructor
+    platform: all
+    product: CockroachDB
+    version: all
+    output: web, pdf
+    items:
+    - title: About the CockroachDB Base Box
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_about_base_box.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+    - title: Configure the CockroachDB Base Box
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_configure_base_box.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+
+  - title: CockroachDB Cluster
+    audience: student, instructor
+    platform: all
+    product: CockroachDB
+    version: all
+    output: web, pdf
+    items:
+    - title: Cluster Startup
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_create_cockroachdb_cluster.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+
+    - title: Logging On to a Cluster Machine
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_log_on_to_a_node.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+
+    - title: Cluster Shutdown and Admin
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_shutdown_and_admin.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+
+
+  - title: Database Setup
+    audience: student, instructor
+    platform: all
+    product: CockroachDB
+    version: all
+    output: web, pdf
+    items:
+    - title: CockroachDB Instance Startup
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_instance_startup.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+
+    - title: Connect to the Database
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_connect_to_the_database.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+
+    - title: Monitor the Database
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_monitor_the_database.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+
+    - title: Database Shutdown and Admin
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_db_shutdown_and_admin.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+
+  - title: Afterwards
+    audience: student, instructor
+    platform: all
+    product: CockroachDB
+    version: all
+    output: web, pdf
+    items:
+    - title: Shutdown Database
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_db_shutdown.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+    - title: Shutdown VM
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_vm_shutdown.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+    - title: Unistall
+      url: /cockroach-vb-cluster/cockroach-vb-cluster_uninstall.html
+      audience: student, instructor
+      platform: all
+      product: CockroachDB
+      version: all
+      output: web, pdf
+
