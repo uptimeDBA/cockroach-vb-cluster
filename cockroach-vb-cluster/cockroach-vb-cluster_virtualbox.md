@@ -9,10 +9,6 @@ The logical architecture built using this guide looks like this. The diagram sho
 
 ![Logical Cluster Architecture](images/virtualbox_architecture.png)
 
-{{site.data.alerts.note}}
-The client machine is currently just another copy of a cluster node but it really should have a GUI interface so it can run the CockroachDB UI and not just the cockroach sql command line. In a future release of this guide the client VM machine will have a GUI interface. You can still run the CockroachDB UI from the host machine as it has direct access to the cluster network.
-{{site.data.alerts.end}}
-
 
 ## Install VirtualBox
 <span class="label label-info">Windows</span><span class="label label-success">Mac</span><span class="label label-warning">Linux</span>
@@ -42,7 +38,7 @@ The logical network looks like this:
 
 ![virtualbox preferenes](images/VirtualBox_Preferences.png)
 
-2.  Select the edit host-only network icon and check in the Adapter tab that the entries are as below. If there is no adapter listed, add one with the details below. The DHCP Server doesn’t have to be enabled as the guide uses static IP address for the cluster nodes but it can be if you want to.
+2.  Select the edit host-only network icon and check in the Adapter tab that the entries are as below. If there is no adapter listed, add one with the details below. It's important that the Adapter's IPv4 Address is **192.168.56.1** so it will be on the same Host-only network as the cluster nodes. The DHCP Server doesn’t have to be enabled as the guide uses static IP address for the cluster nodes but it can be if you want to.
 
 ![host only network details](images/Host-only_Network_Details.png)
 
