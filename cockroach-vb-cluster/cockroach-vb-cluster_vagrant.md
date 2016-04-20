@@ -36,19 +36,19 @@ This guide relies on the functionality contained within the Vagrant [vagrant-vbg
 1. To install the plugin, from the command prompt on the host machine, execute the `vagrant plugin install vagrant-vbguest` command.
 
    ```Shell
-   cockroach-vb-cluster> vagrant plugin install vagrant-vbguest
+   > vagrant plugin install vagrant-vbguest
    Installing the 'vagrant-vbguest' plugin. This can take a few minutes...
    Installed the plugin 'vagrant-vbguest (0.11.0)'!
-   cockroach-vb-cluster>
+   >
    ```
 
 2. Check that the plugin has been installed and it’s version using the `vagrant plugin list` command.
 
    ```Shell
-   cockroach-vb-cluster>vagrant plugin list
+   > vagrant plugin list
    vagrant-share (1.1.5, system)
    vagrant-vbguest (0.11.0)
-   cockroach-vb-cluster>
+   >
    ```
 There should be no further configuration required but refer to the plugin’s [github page](https://github.com/dotless-de/vagrant-vbguest) for more information.
 

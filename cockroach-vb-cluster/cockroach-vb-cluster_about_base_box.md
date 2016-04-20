@@ -32,6 +32,26 @@ Other than the default packages within the "minimal" group, the other packages c
 - SELinux set to "enforcing"
 
 
+## Guest Additions {#about_guest_additions}
+
+
+A version of the VirtualBox Guest Additions has been pre-installed on the base box. It may not be the same version as the version of VirtualBox you are using. The Vagrant plugin `vagrant-vbguest` checks the Guest Additions version against the version of VirtualBox you are using during machine boot and takes care of it as follows:
+
+- Guest Additions version is **less than** the VirtualBox version
+
+  This is probably the more common case. The vagrant-vbguest will **upgrade** the box's Guest Additions to match the VirtualBox version.
+  
+- Guest Additions version is the **same as** the VirtualBox version
+
+  The vagrant-vbguest plugin will check the versions and it they match, do nothing.
+  
+- Guest Additions version is **greater than** the VirtualBox version
+
+  This might happen if VirtualBox is an older version. The vagrant-vbguest plugin will **downgrade** the Guest Additions to match the VirtualBox version.
+  
+The re-installation of the Guest Additions on each cluster node can take some time so please be patient during the first boot of your cluster. 
+
+
 ## Firewall Configuration
 
 The firewall (firewalld) is enabled with a **cockroach** service added by creating a file called `cockroach.xml` in `/etc/firewalld/services` directory with the contents:

@@ -15,16 +15,15 @@ The logical architecture built using this guide looks like this. The diagram sho
 
 1.  Download and install the latest version of [VirtualBox](https://www.virtualbox.org/manual/ch06.html) onto your host machine. Accept all the default choices during install. This guide was created and tested using version 5.0.14 but should work with newer versions.
 
-2.  The VirtualBox Extension Pack that is optionally installed on the host machine is not required for this guide but you can install it if you want to. The VirtualBox Guest Additions that are optionally install on the guest machines are required but their downloading and installation is handled by Vagrant.
+2.  Download and install The VirtualBox Extension Pack that matches the version of VirtualBox. This is required to provide USB functionality if your host machine uses a USB mouse or keyboard.
+
+The VirtualBox Guest Additions that are optionally install on the guest machines are required but their downloading and installation is handled by Vagrant.
+
 
 ## Configure VirtualBox
 <span class="label label-info">Windows</span><span class="label label-success">Mac</span><span class="label label-warning">Linux</span>
 
-
 VirtualBox doesn’t require much configuration for the setup in this guide. The only consideration is the virtual networking requirements for the cluster.
-
-
-### Network
 
 Each VirtualBox machine requires two network interfaces configured.
 
@@ -34,22 +33,41 @@ The logical network looks like this:
 
 ![logical network](images/virtualbox_logical_network_with_hostonly.png)
 
+### Add a Host-only Network Adapter (Windows Host)
+<span class="label label-info">Windows</span>
+
 1.  If you already had VirtualBox installed, check that you have a Host-only network adapter configured on the host. If this is a fresh install of VirtualBox, check that a Host-only network adapter is configured as below. On the host machine, using the VirtualBox Manager GUI, Select **File --> Preferences**, then in the VirtualBox - Settings window, select **Network**. In the Network pane, select the **Host-only Networks** tab and check you have an entry named **VirtualBox Host-Only Ethernet Adapter**.
 
-![virtualbox preferenes](images/VirtualBox_Preferences.png)
+   ![virtualbox preferences win](images/VirtualBox_Preferences_win.png)
 
 2.  Select the edit host-only network icon and check in the Adapter tab that the entries are as below. If there is no adapter listed, add one with the details below. It's important that the Adapter's IPv4 Address is **192.168.56.1** so it will be on the same Host-only network as the cluster nodes. The DHCP Server doesn’t have to be enabled as the guide uses static IP address for the cluster nodes but it can be if you want to.
 
-![host only network details](images/Host-only_Network_Details.png)
+   ![host only network details win](images/Host-only_Network_Details_win.png)
+
+### Add a Host-only Network Adapter (Mac Host)
+<span class="label label-success">Mac</span>
+
+1.  If you already had VirtualBox installed, check that you have a Host-only network adapter configured on the host. If this is a fresh install of VirtualBox, check that a Host-only network adapter is configured as below. On the host machine, using the VirtualBox Manager GUI, Select **VirtualBox --> Preferences**, then in the VirtualBox - Preferences window, select **Network**. In the Network pane, select the **Host-only Networks** tab and check you have an entry named **vboxnet0**.
+
+   ![virtualbox preferences mac](images/VirtualBox_Preferences_mac.png)
+
+2.  Select the edit host-only network icon and check in the Adapter tab that the entries are as below. If there is no adapter listed, add one with the details below. It's important that the Adapter's IPv4 Address is **192.168.56.1** so it will be on the same Host-only network as the cluster nodes. The DHCP Server doesn’t have to be enabled as the guide uses static IP address for the cluster nodes but it can be if you want to.
+
+   ![host only network details mac](images/Host-only_Network_Details_mac.png)
+
+### Add a Host-only Network Adapter (Linux Host)
+<span class="label label-warning">Linux</span>
+
+Coming soon.
 
 See the [Virtual networking chapter](https://www.virtualbox.org/manual/ch06.html) of the VirtualBox manual for more information.
 
 
-### About VirtualBox and Guest Time Synchronization
+## About VirtualBox and Guest Time Synchronization
 
 There is no Linux based time synchronization service like `NTP` running on the cluster nodes to keep their time in sync. The VirtualBox Guest Additions ensure that the guest's system time is synchronized with the host time. Time synchronization is performed by the **VBoxService** process running on the guest machine.
 
-It’s important that the CockroachDB machine nodes have as consistent time as possible. It’s more important that the time is consistent across the cluster nodes than absolutely accurate.
+It’s important that the CockroachDB machine nodes have as consistent time as possible. For this demo cluster, it’s more important that the time is consistent across the cluster nodes than absolutely accurate.
 
 The default time synchronization settings in VirtualBox aren't really good enough to maintain adequate time consistency between the cluster nodes.
 

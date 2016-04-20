@@ -13,7 +13,11 @@ There are 27 machines defined in the cluster Vagrantfile, that is, 26 cluster no
 
 Executing the `vagrant up` command in the `cockroach-vb-cluster` directory will only, by default, start the client machine and the first three nodes **(node[A-C])**. This is done to start a minimum sized cluster (3 nodes) by default while still giving you the ability to start/stop the other 23 nodes manually.
 
-1. On the host machine, in the `cockroach-vb-cluster` directory, at the command prompt, execute the `vagrant up` command. This will start the client machine and the first 3 nodes by default.
+{{site.data.alerts.note}}
+You don't need to run the vagrant init command as the configuration files contain a pre-configured Vagrantfile ready to go.
+{{site.data.alerts.end}}
+
+1. On the host machine, in the `cockroach-vb-cluster` directory, at the command prompt, execute the `vagrant up` command. This will start the client machine and the first 3 nodes by default. On the first boot it will also re-install the VirtualBox Guest Additions to match the version of VirtualBox if required.
 
 ```Shell
 cockroach-vb-cluster> vagrant up
@@ -177,7 +181,7 @@ For example: `vagrant up --no-install-provider /node[D-F]/` should work.
 
 {{site.data.alerts.note}}
 It takes about 35 minutes to start the 27 machines for the first time on my host machine, with each node configured with 1Gb memory and 1 CPU.
-It only takes about 3 minutes to start the 4 default machines. YMMV.
+It takes about 3 - 4 minutes to start the 4 default machines. YMMV.
 {{site.data.alerts.end}}
 
 ## Check the Status of the Cluster

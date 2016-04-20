@@ -22,6 +22,23 @@ The zip file containing the Vagrant base box and it's configuration files is sto
 2. Place the `cockroach-vb-cluster.zip` file into the `cockroach-vb-cluster` directory and unzip. (Check the unzip utility doesn't add the name of the zip file to the directory location or you will end up with `cockroach-vb-cluster\cockroach-vb-cluster`.) The zip file contains the Vagrant box file and other configuration scripts.
 
 
+### Files in the cockroach-vb-cluster.zip
+
+These are the files in the .zip file.
+
+- `clusterhosts` A hosts file containing the IP/hostname mapping for the cluster nodes. This file is not used by default but it can be added to the `hosts` file on your host machine to provide name resolution on the Host-only (192.168.56.0) network.
+
+- `CockroachDB_<version>.box` This is the Vagrant base box file. The version number relates to version of the VirtualBox Guest Additions that is installed. See the [Guest Additions][about_guest_additions] section on what happens if your version of VirtualBox is different from the Guest Additions installed in the base box.
+
+- `insecure_private_key` This is the Vagrant insecure private key.
+
+- `insecure_private_key.ppk` This is the Vagrant insecure private key in PuTTy format. If you have a Windows host, you can use this key to connect to a cluster machine using PuTTY from Windows.
+
+- `node_provision.bash` This is the machine provisioning script that Vagrant runs the first time a machine is booted. It does things like install the lastest version of cockroachDB onto the node and creates the SSL certificates and keys etc.
+
+- `Vagrantfile` This is the configuration file Vagrant uses to start and manage the cluster.
+
+
 ## Add the CockroachDB Box to Vagrant
 
 1. On the host machine, at the command prompt, in the `cockroach-vb-cluster` direcory, execute the `vagrant box add --name CockroachDB CockroachDB.box` command.
@@ -106,7 +123,7 @@ The pre-built binary version will probably be different to the one used in the i
 
 1. Open a web browser on your host machine and go to the [Install CockroachDB](https://www.cockroachlabs.com/docs/install-cockroachdb.html) `https://www.cockroachlabs.com/docs/install-cockroachdb.html` page, select **Linux** and **Download the Binary**. Click the **CockroachDB tarball for Linux** link.
 
-   Save the .tgz file into the `cockroach-vb-cluster` directory.
+   Save the .tgz file into the `cockroach-vb-cluster` directory. You don't have to un-compress it or anything else. The Vagrant provision script (`node_provision.bash`) will do all that latter.
    ![Download CockroachDB](images/Download_CockroachDB.png)
 
 

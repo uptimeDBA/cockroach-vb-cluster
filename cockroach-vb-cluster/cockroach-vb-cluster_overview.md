@@ -12,7 +12,7 @@ For a high-level overview of what you will be building with this guide, the logi
 
 ![virtualbox architecture](images/virtualbox_architecture.png)
 
-Vagrant and VirtualBox work on Max OS/X and Linux so you could use one of those for the host machine instead of Windows. Instructions for a Mac or Linux host are included where they differ from those on Windows.
+Vagrant and VirtualBox work on Max OS X and Linux so you could use one of those for the host machine instead of Windows. Instructions for a Mac or Linux host are included where they differ from those on Windows.
 
 If you haven't used VirtualBox or Vagrant before, I would recommend you read [Chapter 1. First
 Steps](https://www.virtualbox.org/manual/ch01.html) in the VirtualBox manual and the [Why Vagrant](https://www.vagrantup.com/docs/why-vagrant/index.html) section of the Vagrant documentation. 
@@ -58,7 +58,7 @@ Versions greater than those listed should also work.
 | Software | Version
 |:-|:-
 | Cygwin* | 2.4.1
-| VirtualBox | 5.0.14
+| VirtualBox | 5.0.18
 | Vagrant | 1.8.1
 |---
 

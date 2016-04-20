@@ -8,7 +8,7 @@ summary: "All the little things you need to know before you get going."
 
 ## Audience
 
-This guide is intended for people wishing to setup their own CockroachDB cluster to evaluate it’s functionality and learn how it works. Architects, Database Administrators, DevOps etc. It’s assumes a proficient level of computing skills but previous experience with the related toolset (VirtualBox, Vagrant, etc) is not required.
+This guide is intended for people wishing to setup their own CockroachDB cluster to evaluate it’s functionality and learn how it works. Architects, Database Administrators, DevOps etc. It assumes a proficient level of computing skills but previous experience with the related toolset (VirtualBox, Vagrant, etc) is not required.
 
 {{site.data.alerts.important}}
 It is not a guide for setting up a development environment for hacking the code or for running performance tests. Should you wish to contribute to the Cockroach open source project, take a look at the Contribute to CockroachDB page on the CockroachLabs website.

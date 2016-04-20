@@ -56,8 +56,32 @@ Each cluster node uses the default vagrant SSH key pair so after you have set up
 ## Using Mac OS X Terminal
 <span class="label label-success">Mac</span>
 
-Coming soon.
-<!-- html comments can be used by kramdown comments ?? -->
+You can use the Mac OS X Terminal to log onto the cluster nodes using SSH. The Vagrant insecure private key has been provided in the file `vagrant_private_key` in the `cockroach-vb-cluster` directory.
+
+1. On the host machine, in the `cockroach-vb-cluster` directory, execute the `vagrant ssh-config NodeA` command to determine which port number on the host machine the SSHD service on the guest machine has been mapped to.
+
+   ```Shell
+   Mac:cockroach-vb-cluster $ vagrant ssh-config nodeA
+   Host nodeA
+     HostName 127.0.0.1
+     User roachdb
+     Port 2200
+     UserKnownHostsFile /dev/null
+     StrictHostKeyChecking no
+     PasswordAuthentication no
+     IdentityFile "/Users/Paul/.vagrant.d/insecure_private_key"
+     IdentitiesOnly yes
+     LogLevel FATAL
+
+   iMac:cockroach-vb-cluster $ 
+   ```
+   In this example the port 2200 in the host will be forwarded to port 22 (SSH) on the guest.
+
+1. Open the Terminal application and change directory into `cockroach-vb-cluster`. 
+
+   Execute the command `ssh -i vagrant_private_key -p 220 roachdb@localhost`
+   
+   ![Terminal Auto Login](images/Terminal_logged_in.png)
 
 
 ## From the Linux Command Line 
