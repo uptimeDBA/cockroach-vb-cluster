@@ -11,6 +11,7 @@
 echo "Installing latest CockroachDB pre-built binary"
 
 if [ ! -f "/vagrant/cockroach-beta-latest.linux-amd64.tgz" ]; then
+   echo "cockroach-beta-latest.linux-amd64.tgz not found."
    exit 1
 fi
 
